@@ -109,10 +109,10 @@ researchlens-app/
 │   ├── dml_operations.sql
 │   ├── functions.sql
 │   ├── triggers.sql
-│   ├─ views.sql
-│   ├-  api.py
+│   ├── views.sql
+│   ├── api.py
 |   ├── generate_embeddings.py
-│   └─ semantic_search.py
+│  L └─ semantic_search.py
 │
 ├─docs/                        # Project documentation
 │   ├── DATABASE_IMPLEMENTATION.md
@@ -125,6 +125,8 @@ researchlens-app/
 ├── package.json
 ├── README.md
 └── tsconfig.json
+
+```
 
 ## Setup and Execution
 
@@ -140,6 +142,7 @@ researchlens-app/
 ```bash
 git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd researchlens-app
+```
 
 ---
 
