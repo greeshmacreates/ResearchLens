@@ -140,3 +140,11 @@ researchlens-app/
 ```bash
 git clone <YOUR_GITHUB_REPOSITORY_URL>
 cd researchlens-app
+
+---
+
+## Entity Relationship Diagram
+
+The following diagram illustrates the entities, attributes, primary keys, foreign keys, and relationships in ResearchLens.
+
+![ResearchLens ER Diagram](docs/ER_DIAGRAM.png)
