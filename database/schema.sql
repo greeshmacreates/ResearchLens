@@ -23,7 +23,8 @@ CREATE TABLE papers (
         CHECK (publication_year BETWEEN 1500 AND 2100),
     doi VARCHAR(255) UNIQUE,
     url TEXT,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
+    created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 -- 3. Authors
@@ -71,11 +72,11 @@ CREATE TABLE citations (
 );
 
 -- 8. Paper embeddings for semantic similarity search
--- Vector dimension will be fixed after we choose the embedding model.
+-- Uses 384-dimensional embeddings from all-MiniLM-L6-v2.
 CREATE TABLE paper_embeddings (
     paper_id BIGINT PRIMARY KEY REFERENCES papers(paper_id)
         ON DELETE CASCADE,
-    embedding VECTOR,
+    embedding VECTOR(384),
     model_name VARCHAR(150) NOT NULL,
     embedded_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
