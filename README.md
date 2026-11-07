@@ -109,10 +109,10 @@ researchlens-app/
 │   ├── dml_operations.sql
 │   ├── functions.sql
 │   ├── triggers.sql
-│  ├─ views.sql
-│  ├-  api.py
+│   ├─ views.sql
+│   ├-  api.py
 |   ├── generate_embeddings.py
-│  └─ semantic_search.py
+│   └─ semantic_search.py
 │
 ├─docs/                        # Project documentation
 │   ├── DATABASE_IMPLEMENTATION.md
