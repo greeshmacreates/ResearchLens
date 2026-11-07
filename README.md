@@ -87,9 +87,21 @@ role-based access checks.
 
 ## Project Structure
 
+```text
 researchlens-app/
-├── app/                  # Next.js pages and API routes
-├── database/             # SQL scripts and Python backend
+│
+├── app/                         # Next.js pages and API routes
+│   ├── admin/
+│   ├── analytics/
+│   ├── api/
+│   ├── citations/
+│   ├── login/
+│   ├── reading-lists/
+│   ├── register/
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── database/                    # SQL scripts and Python backend
 │   ├── schema.sql
 │   ├── seed.sql
 │   ├── extra_papers.sql
@@ -97,14 +109,22 @@ researchlens-app/
 │   ├── dml_operations.sql
 │   ├── functions.sql
 │   ├── triggers.sql
-│   ├── views.sql
-│   ├── api.py
-│   ├── generate_embeddings.py
-│   └── semantic_search.py
-├── docs/                 # Project documentation
-├── public/               # Static assets
-├── .env                  # Local environment configuration
-└── README.md
+│  ├─ views.sql
+│  ├-  api.py
+|   ├── generate_embeddings.py
+│  └─ semantic_search.py
+│
+├─docs/                        # Project documentation
+│   ├── DATABASE_IMPLEMENTATION.md
+│   ├── ER_DIAGRAM.md
+│   └── TECHNOLOGY_JUSTIFICATION.md
+│
+├── public/                      # Static assets
+├── .env                         # Local environment configuration (not committed)
+├── .gitignore
+├── package.json
+├── README.md
+└── tsconfig.json
 
 ## Setup and Execution
 
